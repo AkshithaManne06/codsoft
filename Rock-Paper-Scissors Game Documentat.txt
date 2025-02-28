@@ -1,0 +1,75 @@
+                                           Rock-Paper-Scissors Game
+
+
+This document provides an overview and explanation for the Rock-Paper-Scissors game written in Python. The game allows the user to play against the computer in a friendly and interactive way, with the option to play multiple rounds and track scores.
+Short Documentation:
+Purpose:
+The Rock-Paper-Scissors game is a simple interactive game where the user competes against the computer. The game allows the user to choose rock, paper, or scissors, and the computer randomly makes a choice. The game then determines the winner based on the rules:
+
+Rock beats Scissors
+Scissors beat Paper
+Paper beats Rock
+Additionally, the game tracks the score across multiple rounds and allows the user to play again.
+
+How It Works:
+User Input:
+
+The user is prompted to choose either rock, paper, or scissors using the input() function. The input is converted to lowercase to handle case-insensitivity.
+If the user inputs an invalid choice, they are asked to try again until a valid input is provided.
+Computer Choice:
+
+The computer randomly selects one of the choices (rock, paper, or scissors) using Python’s random.choice() function.
+Determine the Winner:
+
+The determine_winner() function compares the user’s choice and the computer’s choice. It follows the basic rules of Rock-Paper-Scissors:
+Rock beats Scissors
+Scissors beat Paper
+Paper beats Rock
+If both the user and the computer choose the same item, it's a tie.
+Score Tracking:
+
+The program keeps track of both the user’s and the computer’s scores. Each time the user wins, their score increases by 1; if the computer wins, its score increases by 1.
+Display Results:
+
+After each round, the program prints both the user’s and the computer’s choices along with the result (win, lose, or tie).
+The current score is also displayed.
+Play Again:
+
+The user is asked if they would like to play another round. If they type "yes," the game continues; if they type anything else, the game ends with a thank-you message.
+Features:
+Random Computer Choice: The computer makes a random selection, ensuring that each game is unpredictable.
+Score Tracking: The game tracks and displays the current score for the user and the computer after each round.
+Replayability: After each round, the user has the option to play again.
+User-Friendly Interface: Clear instructions and feedback are provided throughout the game, making it easy to follow.
+Code Breakdown:
+Imports:
+
+import random: The random module is used to randomly select the computer’s choice.
+Function determine_winner():
+
+This function takes the user’s and the computer’s choices and returns the result (win, lose, or tie) based on the Rock-Paper-Scissors rules.
+Function play_game():
+
+This function handles the game logic for one round: it gets the user’s choice, generates the computer’s choice, determines the winner, and returns the result.
+Main Loop in main():
+
+This function handles multiple rounds of the game, updates the score, and prompts the user whether they want to play again. The game continues until the user decides to stop.
+Possible Enhancements:
+Difficulty Levels:
+
+Introduce difficulty levels where the computer can use strategies to win more often, or have the user face an "intelligent" opponent.
+Game Statistics:
+
+After a series of rounds, display statistics such as win percentage or longest winning streak.
+Improved UI:
+
+Create a graphical user interface (GUI) using tkinter or another GUI framework to make the game more interactive.
+Custom Rules:
+
+Allow the user to define custom rules, such as adding new moves (e.g., Lizard, Spock from the extended version of Rock-Paper-Scissors).
+Conclusion:
+This Rock-Paper-Scissors game provides an interactive and simple way for users to play against the computer. With score tracking and the option to play multiple rounds, it is an entertaining game. The code can be easily enhanced to include more advanced features, but even in its current form, it offers a fun and accessible user experience.
+
+
+
+
